@@ -46,7 +46,7 @@ class OrdersScreen extends StatelessWidget {
               },
             ),
           ),
-          const Text("Available Orders", style: TextStyle( color: Colors.red,),),
+          const Text("Closed Orders", style: TextStyle( color: Colors.red,),),
           // Closed orders section
           BlocProvider(
             create: (context) => ClosedOrdersBloc()..add(FetchOrdersEvent()),
